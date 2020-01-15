@@ -11,10 +11,6 @@ class ApplicationController < Sinatra::Base
   get '/' do
     'welcome'
   end
-  
-  get '/students' do 
-    @students = ['Jarbi', 'Ruel', 'Santiago', 'Nicole']
-    erb :index
-  end 
+
   
 end
