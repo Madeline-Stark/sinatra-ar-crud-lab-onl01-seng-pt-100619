@@ -12,5 +12,8 @@ class ApplicationController < Sinatra::Base
     'welcome'
   end
 
+  get '/students' do
+    erb :index
+  end
   
 end
