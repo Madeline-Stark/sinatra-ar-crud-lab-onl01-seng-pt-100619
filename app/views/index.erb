@@ -1,1 +1,8 @@
-"Hello Andrew, Alice, Justin, and Nathan"
+<ul>
+<% @students.each do |student| %>
+  <li><%=student %></li>
+<% end %>  
+</ul>
+
+<li><%= @students.join('</li><li>') %></li>
+
