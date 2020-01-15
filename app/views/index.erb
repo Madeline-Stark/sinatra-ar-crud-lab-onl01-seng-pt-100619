@@ -1,8 +1,13 @@
 <ul>
 <% @students.each do |student| %>
-  <li><%=student %></li>
+  <li><%=student.name %>
+  <ul>
+    <li><%=student.school %></li>
+  </ul>
+    
+    </li>
 <% end %>  
 </ul>
 
-<li><%= @students.join('</li><li>') %></li>
+
 
